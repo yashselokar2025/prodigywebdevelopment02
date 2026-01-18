@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fishing River Stopwatch - Task 02</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="task-badge">Task-02</div>
+    <div class="river-background">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+    <div class="flood-overlay" id="floodOverlay"></div>
+    <div class="fishing-rod" id="fishingRod">
+        <div class="rod-pole"></div>
+        <div class="rod-handle"></div>
+        <div class="rod-line" id="rodLine"></div>
+        <div class="rod-hook" id="rodHook"></div>
+    </div>
+    <div class="fish" id="fish">🐟</div>
+    <div class="obstacle" id="obstacle">🪨</div>
+    <div class="container">
+        <h1>🎣 Fishing River Stopwatch</h1>
+        <p class="subtitle">Cast Your Line & Track Time</p>
+        <div class="display" id="display">00:00:00</div>
+        <div class="controls">
+            <button class="btn start-btn" id="startBtn" onclick="start()">
+                <span>🎣Start</span>
+            </button>
+            <button class="btn pause-btn" id="pauseBtn" onclick="pause()" style="display:none;">
+                <span>⏸ Pause</span>
+            </button>
+            <button class="btn lap-btn" id="lapBtn" onclick="recordLap()" style="display:none;">
+                <span>🐟 Catch/Lap</span>
+            </button>
+            <button class="btn reset-btn" id="resetBtn" onclick="reset()">
+                <span>🌊 Flood Reset</span>
+            </button>
+        </div>
+        <div class="laps" id="laps"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
